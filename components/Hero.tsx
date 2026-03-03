@@ -106,7 +106,6 @@ export default function Hero() {
       <div className="w-full bg-[#291d00] flex items-center justify-center px-4 py-3 flex-shrink-0">
         <p className="text-xforge-gold text-[14px] sm:text-sm lg:text-base font-normal leading-[1.1] text-center">
           Launching soon on Kickstarter • Early-backer perks
-          deposit
         </p>
       </div>
 
