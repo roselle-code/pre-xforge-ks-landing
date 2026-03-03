@@ -82,7 +82,7 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="relative mt-[12px] lg:mt-[16px] mx-auto w-full h-[calc(100dvh-380px)] overflow-visible">
+        <div className="relative mt-[12px] lg:mt-[16px] mx-auto w-full h-[min(calc(100dvh-380px),500px)] overflow-visible">
           <div
             ref={wheelRef}
             className="absolute inset-0 will-change-transform"
