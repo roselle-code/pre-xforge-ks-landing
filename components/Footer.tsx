@@ -141,7 +141,7 @@ export default function Footer() {
               <span className="font-semibold text-xforge-gold">
                 Reserve now{" "}
               </span>
-              <span className="text-white">and save about </span>
+              <span className="text-white">and save </span>
               <span className="font-semibold text-xforge-green-bright">
                 $200
               </span>
@@ -157,7 +157,7 @@ export default function Footer() {
           variants={fadeInUp}
           className="flex flex-col gap-4 lg:gap-6 w-full"
         >
-          <div className="flex items-center justify-center gap-5 lg:gap-6 text-base lg:text-xl leading-[1.1] text-white">
+          <div className="flex items-center justify-center gap-5 lg:gap-6 text-[14px] leading-[1.1] text-white">
             <a
               href="https://kickstarter.xforgephone.com/privacy-policy"
               target="_blank"
