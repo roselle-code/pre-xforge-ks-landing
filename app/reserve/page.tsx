@@ -214,7 +214,7 @@ function ReserveForm() {
             href="/api/checkout"
             onClick={() => trackReserveClick()}
             whileHover="wiggle"
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.97, boxShadow: "0px 0px 20px 4px rgba(255,188,14,0.5), 0px 0px 0px 1px #fbc946, 0px 1px 2px 0px rgba(0,0,0,0.3)" }}
             className={`${S.btnGold} flex items-center justify-center h-[44px] w-full rounded-[12px] text-[14px] sm:text-[16px] font-medium hover:scale-[1.04]`}
           >
             <motion.span
@@ -232,7 +232,7 @@ function ReserveForm() {
             rel="noopener noreferrer"
             onClick={() => trackKickstarterClick("reserve_page")}
             whileHover="wiggle"
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.97, boxShadow: "0px 0px 14px 3px rgba(200,200,200,0.4), 0px 0px 0px 1px #f5f5f5, 0px 1px 2px 0px rgba(0,0,0,0.3)" }}
             className={`${S.btnNotify} flex items-center justify-center gap-[8px] h-[44px] w-full rounded-[12px] text-[14px] sm:text-[16px] font-medium hover:scale-[1.04]`}
           >
             <motion.span
