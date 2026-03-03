@@ -157,7 +157,7 @@ export default function Footer() {
           variants={fadeInUp}
           className="flex flex-col gap-4 lg:gap-6 w-full"
         >
-          <div className="flex items-center justify-center gap-5 lg:gap-6 text-[14px] leading-[1.1] text-white">
+          <div className="flex items-center justify-center gap-5 lg:gap-6 text-[11px] lg:text-sm leading-[1.1] text-white">
             <a
               href="https://kickstarter.xforgephone.com/privacy-policy"
               target="_blank"

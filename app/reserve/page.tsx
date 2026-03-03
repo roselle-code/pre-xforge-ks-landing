@@ -296,7 +296,7 @@ function ReserveForm() {
       </p>
 
       {/* Footer links */}
-      <div className="flex items-center justify-center gap-5 text-[14px] leading-[1.1] text-[#707070] pt-4">
+      <div className="flex items-center justify-center gap-5 text-[11px] lg:text-sm leading-[1.1] text-[#707070] pt-4">
         <a
           href="https://kickstarter.xforgephone.com/privacy-policy"
           target="_blank"
