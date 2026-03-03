@@ -44,28 +44,30 @@ export default function EmailSubscription() {
   return (
     <div className="w-full max-w-[360px] sm:max-w-[465px]">
       <div
-        className={`${S.emailWrap} flex items-center justify-between pl-4 pr-2 py-2 ${
+        className={`relative bg-xforge-input-bg border rounded-[20px] md:rounded-[12px] flex flex-col md:flex-row md:items-center p-1 md:pl-4 md:pr-1 md:py-1 gap-1 md:gap-0 md:h-[44px] w-full transition-colors duration-200 ${
           showError ? "border-red-500" : "border-xforge-border"
         }`}
       >
-        <input
-          ref={inputRef}
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          onBlur={() => setTouched(true)}
-          onKeyDown={(e) => e.key === "Enter" && handleNotify()}
-          placeholder="name@domain.com"
-          aria-label="Email address"
-          aria-invalid={showError}
-          className={`${S.emailField} text-base font-normal`}
-        />
+        <div className="flex items-center justify-center h-[48px] md:h-auto md:flex-1 md:min-w-0">
+          <input
+            ref={inputRef}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            onBlur={() => setTouched(true)}
+            onKeyDown={(e) => e.key === "Enter" && handleNotify()}
+            placeholder="name@domain.com"
+            aria-label="Email address"
+            aria-invalid={showError}
+            className="bg-transparent text-base font-normal text-xforge-placeholder leading-[1.1] outline-none w-full text-center md:text-left"
+          />
+        </div>
         <motion.button
           type="button"
           onClick={handleNotify}
           whileHover="wiggle"
           whileTap="wiggle"
-          className={`${S.btnGold} flex-shrink-0 flex items-center gap-2 rounded-[12px] px-4 h-[44px] text-base font-medium hover:scale-[1.04]`}
+          className={`${S.btnGold} flex items-center justify-center gap-2 px-4 h-[48px] md:h-[32px] rounded-[16px] md:rounded-[12px] text-base font-medium hover:scale-[1.04] shrink-0 w-full md:w-auto`}
         >
           <motion.span
             variants={{ wiggle: { rotate: [0, -3, 3, -2, 1.5, 0] } }}
