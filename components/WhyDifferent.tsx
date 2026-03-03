@@ -343,9 +343,15 @@ export default function WhyDifferent() {
             <div className="flex items-center gap-4 lg:gap-5">
               <span className="relative flex h-2 w-2 sm:h-3 sm:w-3 lg:h-4 lg:w-4">
                 <span className="animate-ping absolute inset-0 rounded-full bg-xforge-green opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 sm:h-3 sm:w-3 lg:h-4 lg:w-4 bg-xforge-green" />
+                <span
+                  className="relative inline-flex rounded-full h-2 w-2 sm:h-3 sm:w-3 lg:h-4 lg:w-4 bg-xforge-green"
+                  style={{ boxShadow: "0 0 8px 3px rgba(44,181,117,0.6), 0 0 20px 6px rgba(44,181,117,0.3)" }}
+                />
               </span>
-              <span className="text-xforge-green text-[14px] sm:text-[16px] lg:text-[24px] leading-[1.1]">
+              <span
+                className="text-xforge-green text-[14px] sm:text-[16px] lg:text-[24px] leading-[1.1]"
+                style={{ textShadow: "0 0 10px rgba(44,181,117,0.5), 0 0 24px rgba(44,181,117,0.25)" }}
+              >
                 Node is Running
               </span>
             </div>

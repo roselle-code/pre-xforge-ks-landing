@@ -37,7 +37,7 @@ const FAQ_ITEMS = [
 export default function ReservePage() {
   return (
     <main className="bg-white min-h-screen">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-[60px] py-8 sm:py-12 lg:py-[60px]">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-[60px] py-8 sm:py-12 lg:py-[60px] pb-16 sm:pb-20 lg:pb-[80px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
           {/* Left column: Product image + Guarantees */}
           <div className="flex-1 flex flex-col gap-5">
@@ -256,7 +256,7 @@ function FAQItem({
         className="flex items-center justify-between w-full p-4 sm:p-6 text-left cursor-pointer"
         aria-expanded={isOpen}
       >
-        <span className="text-[14px] sm:text-[18px] font-medium leading-[1.3] text-[#050505] pr-4 min-w-0">
+        <span className="text-[14px] sm:text-[18px] font-medium leading-[1.4] text-[#050505] pr-4 min-w-0">
           {question}
         </span>
         <motion.svg
