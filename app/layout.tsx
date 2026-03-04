@@ -36,11 +36,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "XForge Phone — The Phone that Pays You Back",
+    default: "XForge Phone — AI Smartphone that Pays It Forward",
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Your premium phone quietly contributes to a decentralized network while you use it, rewarding you with real perks, every single day.",
+    "Your AI smartphone quietly contributes extra power while you use it, rewarding you with real perks every single day.",
   keywords: [
     "XForge",
     "XForge Phone",
@@ -74,9 +74,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "XForge Phone — The Phone that Pays You Back",
+    title: "XForge Phone — AI Smartphone that Pays It Forward",
     description:
-      "A premium smartphone that earns you real rewards every day through decentralized network participation. Reserve yours at 40% off.",
+      "Your AI smartphone quietly contributes extra power while you use it, rewarding you with real perks every single day.",
     images: [
       {
         url: "/placeholders/reserve-product.png",
@@ -88,9 +88,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "XForge Phone — The Phone that Pays You Back",
+    title: "XForge Phone — AI Smartphone that Pays It Forward",
     description:
-      "A premium smartphone that earns you real rewards every day. Reserve at 40% off on Kickstarter.",
+      "Your AI smartphone quietly contributes extra power while you use it, rewarding you with real perks every single day.",
     images: ["/placeholders/reserve-product.png"],
   },
   alternates: {
