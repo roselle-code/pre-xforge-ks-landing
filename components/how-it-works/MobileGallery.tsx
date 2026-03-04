@@ -123,7 +123,7 @@ export default function MobileGallery() {
         ))}
       </div>
 
-      <div className="max-w-[500px] mx-auto px-4 sm:px-6">
+      <div className="max-w-[500px] mx-auto px-4 sm:px-6 min-h-[130px] sm:min-h-[110px] flex items-start justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeStep}
@@ -131,7 +131,7 @@ export default function MobileGallery() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.3 }}
-            className="text-center"
+            className="text-center w-full"
           >
             <h3 className="text-[18px] sm:text-[22px] font-medium leading-[1.1] text-black mb-3">
               {FEATURES[activeStep].title}

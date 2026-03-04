@@ -167,7 +167,14 @@ export default function HowItWorks() {
             </h2>
           </div>
 
-          <div className="relative mt-[12px] lg:mt-[16px] mx-auto w-full h-[min(calc(100dvh-380px),500px)] overflow-visible">
+          {/*
+            Gallery container height = viewport minus space needed below.
+            Below content: indicators(28) + text(120) + email(110) + bottom(32) ≈ 290px.
+            Title area above: ~80px. So gallery = 100dvh - 80 - 290 = 100dvh - 370px.
+            Capped at 500px so it doesn't get excessive on tall screens.
+            overflow-visible lets photos arc beyond naturally; only viewport clips them.
+          */}
+          <div className="relative mt-[12px] lg:mt-[16px] mx-auto w-full h-[min(calc(100dvh-370px),500px)] overflow-visible">
             <div
               ref={wheelRef}
               className="absolute inset-0 will-change-transform"
@@ -196,7 +203,8 @@ export default function HowItWorks() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-2 mt-6 mb-3">
+          {/* Indicators sit between gallery and text — no background so photos peek through naturally */}
+          <div className="relative z-10 flex justify-center gap-2 mt-4 lg:mt-6 mb-2">
             {FEATURES.map((_, i) => (
               <button
                 key={i}
@@ -210,28 +218,31 @@ export default function HowItWorks() {
             ))}
           </div>
 
-          <div className="max-w-[500px] lg:max-w-[600px] mx-auto px-6">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeStep}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.35 }}
-                className="text-center"
-              >
-                <h3 className="text-[22px] lg:text-[28px] font-medium leading-[1.1] text-black mb-[12px] lg:mb-[17px]">
-                  {FEATURES[activeStep].title}
-                </h3>
-                <p className="text-sm lg:text-base font-normal leading-[1.3] text-[#4d4d4d]">
-                  {FEATURES[activeStep].description}
-                </p>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+          {/* Text + email — z-10 keeps text above any photos that arc below the gallery */}
+          <div className="relative z-10 pb-8 lg:pb-10">
+            <div className="max-w-[500px] lg:max-w-[600px] mx-auto px-6 h-[120px] lg:h-[100px] flex items-start justify-center">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeStep}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.35 }}
+                  className="text-center w-full"
+                >
+                  <h3 className="text-[22px] lg:text-[28px] font-medium leading-[1.1] text-black mb-[12px] lg:mb-[17px]">
+                    {FEATURES[activeStep].title}
+                  </h3>
+                  <p className="text-sm lg:text-base font-normal leading-[1.3] text-[#4d4d4d]">
+                    {FEATURES[activeStep].description}
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            </div>
 
-          <div className="flex justify-center pt-8 lg:pt-10 pb-3">
-            <EmailSubscription />
+            <div className="flex justify-center pt-5 lg:pt-6">
+              <EmailSubscription />
+            </div>
           </div>
         </div>
       </div>
