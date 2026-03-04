@@ -155,14 +155,17 @@ export default function Footer() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="flex flex-col gap-4 lg:gap-6 w-full"
+          className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 lg:gap-0 w-full text-[11px] lg:text-sm leading-[1.1] text-[#707070]"
         >
-          <div className="flex items-center justify-center gap-5 lg:gap-6 text-[11px] lg:text-sm leading-[1.1] text-white">
+          <p className="font-normal text-center">
+            © 2026 XForge. All rights reserved.
+          </p>
+          <div className="flex items-center gap-5">
             <a
               href="https://kickstarter.xforgephone.com/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-normal hover:text-xforge-gold transition-colors duration-200"
+              className="font-normal hover:text-white transition-colors duration-200"
             >
               Privacy Policy
             </a>
@@ -170,20 +173,17 @@ export default function Footer() {
               href="https://kickstarter.xforgephone.com/terms-and-conditions"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium hover:text-xforge-gold transition-colors duration-200"
+              className="font-normal hover:text-white transition-colors duration-200"
             >
               Refund Policy
             </a>
             <a
               href="mailto:support@xforgephone.com"
-              className="font-normal hover:text-xforge-gold transition-colors duration-200"
+              className="font-normal hover:text-white transition-colors duration-200"
             >
               Contact
             </a>
           </div>
-          <p className="text-[11px] lg:text-sm font-normal leading-[1.1] text-xforge-gold text-center">
-            © 2026 XForge. All rights reserved.
-          </p>
         </motion.div>
       </div>
     </footer>
