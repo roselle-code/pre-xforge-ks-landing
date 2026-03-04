@@ -13,14 +13,14 @@ const jsonLd = {
   description:
     "XForge is a premium Android smartphone powered by on-device AI built to reward you.",
   brand: { "@type": "Brand", name: "XForge" },
-  image: "https://pre-xforge-ks-landing.vercel.app/placeholders/reserve-product.png",
-  url: "https://pre-xforge-ks-landing.vercel.app",
+  image: "https://pre-xforge-ks-landing-nh4h.vercel.app/placeholders/reserve-product.png",
+  url: "https://pre-xforge-ks-landing-nh4h.vercel.app",
   offers: {
     "@type": "Offer",
     price: "299",
     priceCurrency: "USD",
     availability: "https://schema.org/PreOrder",
-    url: "https://pre-xforge-ks-landing.vercel.app/reserve",
+    url: "https://pre-xforge-ks-landing-nh4h.vercel.app/reserve",
     priceValidUntil: "2027-12-31",
   },
   aggregateRating: undefined,

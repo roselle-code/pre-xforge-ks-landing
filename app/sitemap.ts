@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://pre-xforge-ks-landing.vercel.app";
+  const baseUrl = "https://pre-xforge-ks-landing-nh4h.vercel.app";
 
   return [
     {
