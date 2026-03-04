@@ -39,13 +39,6 @@ export const trackEmailSubmit = (source: string) =>
     label: source,
   });
 
-export const trackCtaClick = (label: string) =>
-  event({
-    action: "cta_click",
-    category: "engagement",
-    label,
-  });
-
 export const trackKickstarterClick = (source: string) =>
   event({
     action: "kickstarter_click",
@@ -60,9 +53,3 @@ export const trackReserveClick = () =>
     label: "stripe_checkout",
   });
 
-export const trackScrollDepth = (section: string) =>
-  event({
-    action: "scroll_depth",
-    category: "engagement",
-    label: section,
-  });

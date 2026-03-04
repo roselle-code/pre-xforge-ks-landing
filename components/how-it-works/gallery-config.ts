@@ -37,9 +37,9 @@ export const FEATURES = [
 ];
 
 export const RADIUS = 1100;
-export const DESKTOP_PHOTO_COUNT = DESKTOP_PHOTOS.length;
-export const ANGLE_STEP = 16;
-export const START_ANGLE = -((DESKTOP_PHOTO_COUNT - 1) / 2) * ANGLE_STEP;
+const DESKTOP_PHOTO_COUNT = DESKTOP_PHOTOS.length;
+const ANGLE_STEP = 16;
+const START_ANGLE = -((DESKTOP_PHOTO_COUNT - 1) / 2) * ANGLE_STEP;
 // TOTAL_ROTATION: total degrees the wheel rotates during scroll (negative = counter-clockwise)
 export const TOTAL_ROTATION = -36;
 export const PHOTO_TOP_OFFSET = 60;

@@ -48,39 +48,8 @@ body {
   }
 }
 
-@keyframes glow-pulse {
-  0%,
-  100% {
-    box-shadow: 1px 2px 20.5px 6px rgba(255, 248, 145, 0.18);
-  }
-  50% {
-    box-shadow: 1px 2px 28px 10px rgba(255, 248, 145, 0.28);
-  }
-}
-
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .animate-marquee {
   animation: marquee 75s linear infinite;
-}
-
-.animate-glow-pulse {
-  animation: glow-pulse 3s ease-in-out infinite;
-}
-
-.animate-gradient-shift {
-  background-size: 200% 200%;
-  animation: gradient-shift 8s ease infinite;
 }
 
 @keyframes footer-pattern-fade {
@@ -111,8 +80,6 @@ body {
     scroll-behavior: auto;
   }
   .animate-marquee,
-  .animate-glow-pulse,
-  .animate-gradient-shift,
   .footer-pattern {
     animation: none;
   }
