@@ -955,7 +955,7 @@ export default function WhyDifferent() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.0 }}
             className="badge-glitch absolute z-10 bg-[rgba(0,200,83,0.15)] border border-[#00c853]/40 rounded-[6px] px-[7px] py-[2px] flex items-center gap-1"
-            style={{ top: "58%", right: 10, animationDelay: "6.5s" }}
+            style={{ top: "76%", left: "75%", animationDelay: "6.5s" }}
           >
             <span className="inline-flex rounded-full h-[6px] w-[6px] bg-[#00c853]" />
             <span className="font-mono text-[8px] text-[#00c853] font-medium">LIVE</span>
