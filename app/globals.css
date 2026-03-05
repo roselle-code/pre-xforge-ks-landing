@@ -54,13 +54,13 @@ body {
 
 @keyframes footer-pattern-fade {
   0% {
-    opacity: 0.28;
+    opacity: 0.18;
   }
   50% {
-    opacity: 0.12;
+    opacity: 0.08;
   }
   100% {
-    opacity: 0.24;
+    opacity: 0.18;
   }
 }
 
