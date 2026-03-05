@@ -11,9 +11,44 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 
 import EmailSubscription from "./mosaic-gallery/EmailSubscription";
+
+const REVEAL_WORDS = [
+  { text: "Beautifully", highlight: false },
+  { text: "crafted", highlight: false },
+  { text: "and", highlight: false },
+  { text: "incredibly", highlight: false },
+  { text: "smart", highlight: true },
+];
+const WORD_DELAY = 0.12;
+
+function TypingReveal({ fontSize }: { fontSize: string }) {
+  const ref = useRef<HTMLParagraphElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-40px" });
+
+  return (
+    <p ref={ref} className={`font-medium leading-[1.1] ${fontSize}`}>
+      {REVEAL_WORDS.map((word, i) => (
+        <span key={i} className="inline-block overflow-hidden align-bottom">
+          <motion.span
+            className={`inline-block ${word.highlight ? "text-black font-serif italic" : "text-[#707070]"}`}
+            initial={{ y: "100%" }}
+            animate={inView ? { y: 0 } : {}}
+            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: i * WORD_DELAY }}
+          >
+            {word.text}
+          </motion.span>
+        </span>
+      )).reduce<React.ReactNode[]>((acc, el, i) => {
+        if (i > 0) acc.push(" ");
+        acc.push(el);
+        return acc;
+      }, [])}
+    </p>
+  );
+}
 
 const CARD_BG =
   "radial-gradient(ellipse at center top, #050505, #141414 50%, #2a2a2a 62.5%, #404040 75%, #565656 87.5%, #6d6d6d 100%)";
@@ -123,18 +158,9 @@ export default function MosaicGallery() {
             index={4}
           />
           {/* Row 2 right: Text card — spans 2 cols */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.05, margin: "100px 0px 0px 0px" }}
-            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-            className="col-span-2 relative overflow-hidden rounded-[20px] flex items-center px-10"
-          >
-            <p className="text-[46px] font-medium leading-[1.1]">
-              <span className="text-[#707070]">Beautifully crafted and incredibly </span>
-              <span className="text-black font-serif italic">smart</span>
-            </p>
-          </motion.div>
+          <div className="col-span-2 relative overflow-hidden rounded-[20px] flex items-center px-10">
+            <TypingReveal fontSize="text-[46px]" />
+          </div>
           {/* Row 3 left: Rewards / node dashboard */}
           <PhotoCard
             src="/placeholders/carousel-2.webp"
@@ -177,18 +203,9 @@ export default function MosaicGallery() {
             <PhotoCard src="/placeholders/carousel-6.webp" alt="XForge on desk" className="" objectPosition="center 50%" sizes="50vw" index={1} />
             <PhotoCard src="/placeholders/carousel-2.webp" alt="Rewards dashboard" className="" objectPosition="center center" sizes="50vw" index={2} />
             {/* Text card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.05, margin: "100px 0px 0px 0px" }}
-              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-              className="relative overflow-hidden rounded-[9px] shadow-[0px_3px_3px_rgba(0,0,0,0.25)] flex items-center px-3"
-            >
-              <p className="text-[20px] font-medium leading-[1.1]">
-                <span className="text-[#707070]">Beautifully crafted and incredibly </span>
-                <span className="text-black font-serif italic">smart</span>
-              </p>
-            </motion.div>
+            <div className="relative overflow-hidden rounded-[9px] shadow-[0px_3px_3px_rgba(0,0,0,0.25)] flex items-center px-3">
+              <TypingReveal fontSize="text-[20px]" />
+            </div>
             <PhotoCard src="/placeholders/carousel-8.webp" alt="Holding XForge" className="" objectPosition="65% 35%" sizes="50vw" index={4} />
           </div>
 
