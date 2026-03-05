@@ -755,30 +755,6 @@ export default function WhyDifferent() {
             📸 CAM
           </FloatingBadge>
 
-          <FloatingBadge className="absolute z-10 opacity-40" delay={0.2} style={{ top: "8%", left: "78%" }}>
-            ⚡ DePIN
-          </FloatingBadge>
-
-          <FloatingBadge className="absolute z-10 opacity-60 !w-[32px]" delay={0.9} style={{ top: "42%", left: "4%" }}>
-            🔗
-          </FloatingBadge>
-
-          <FloatingBadge className="absolute z-10 opacity-50" delay={1.1} style={{ top: "52%", left: "75%" }}>
-            🛡️ WEB3
-          </FloatingBadge>
-
-          <FloatingBadge className="absolute z-10 opacity-35 !w-[32px]" delay={0.4} style={{ top: "88%", left: "12%" }}>
-            ⚙️
-          </FloatingBadge>
-
-          <FloatingBadge className="absolute z-10 opacity-45" delay={1.0} style={{ top: "15%", left: "42%" }}>
-            📡 NODE
-          </FloatingBadge>
-
-          <FloatingBadge className="absolute z-10 opacity-30 !w-[32px]" delay={0.8} style={{ top: "60%", left: "52%" }}>
-            💎
-          </FloatingBadge>
-
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -789,18 +765,6 @@ export default function WhyDifferent() {
           >
             <span className="font-mono text-[8px] text-[#d41a1a] font-medium">REC</span>
             <span className="inline-flex rounded-full h-[6px] w-[6px] bg-[#d41a1a]" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-            className="badge-glitch absolute z-10 bg-[rgba(0,200,83,0.15)] border border-[#00c853]/40 rounded-[6px] px-[7px] py-[2px] flex items-center gap-1"
-            style={{ top: "35%", left: "88%", animationDelay: "6s" }}
-          >
-            <span className="inline-flex rounded-full h-[6px] w-[6px] bg-[#00c853]" />
-            <span className="font-mono text-[8px] text-[#00c853] font-medium">LIVE</span>
           </motion.div>
         </div>
 
@@ -946,30 +910,6 @@ export default function WhyDifferent() {
             📸 CAM
           </FloatingBadge>
 
-          <FloatingBadge
-            className="absolute z-10 opacity-40"
-            delay={0.2}
-            style={{ top: 120, right: 5 }}
-          >
-            ⚡ DePIN
-          </FloatingBadge>
-
-          <FloatingBadge
-            className="absolute z-10 opacity-50 !w-[32px]"
-            delay={0.9}
-            style={{ top: "55%", left: 8 }}
-          >
-            🔗
-          </FloatingBadge>
-
-          <FloatingBadge
-            className="absolute z-10 opacity-35"
-            delay={1.0}
-            style={{ top: "40%", right: 12 }}
-          >
-            📡 NODE
-          </FloatingBadge>
-
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -980,18 +920,6 @@ export default function WhyDifferent() {
           >
             <span className="font-mono text-[8px] text-[#d41a1a] font-medium">REC</span>
             <span className="inline-flex rounded-full h-[6px] w-[6px] bg-[#d41a1a]" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 1.1 }}
-            className="badge-glitch absolute z-10 bg-[rgba(0,200,83,0.15)] border border-[#00c853]/40 rounded-[6px] px-[7px] py-[2px] flex items-center gap-1"
-            style={{ top: "25%", right: 20, animationDelay: "6s" }}
-          >
-            <span className="inline-flex rounded-full h-[6px] w-[6px] bg-[#00c853]" />
-            <span className="font-mono text-[8px] text-[#00c853] font-medium">LIVE</span>
           </motion.div>
         </div>
       </div>
