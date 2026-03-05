@@ -227,22 +227,6 @@ export default function MosaicGallery() {
           </div>
         </div>
 
-        {/* Tagline — mobile only (desktop has it inside the grid) */}
-        <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.8, ease: [0.08, 0.9, 0.15, 1] }}
-          className="md:hidden mt-8 flex flex-col gap-1 text-[16px] leading-[1.1] text-center px-2">
-          <p className="font-bold italic text-black">
-            Beautifully crafted and incredibly smart,
-          </p>
-          <p className="font-normal text-[#999]">
-            it is designed to help power a better internet and quietly reward
-            you along the way.
-          </p>
-        </motion.div>
-
         {/* Email subscription */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
