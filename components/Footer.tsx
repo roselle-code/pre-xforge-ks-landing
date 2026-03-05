@@ -155,7 +155,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.12, 1, 0.2, 1], delay: 0.5 }}
-          className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 lg:gap-0 w-full text-[11px] lg:text-sm leading-[1.1] text-[#707070]"
+          className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 lg:gap-0 w-full text-[11px] lg:text-sm leading-[1.1] text-[#999]"
         >
           <p className="font-normal text-center">
             © 2026 XForge. All rights reserved.

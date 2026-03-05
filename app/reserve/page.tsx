@@ -202,7 +202,7 @@ function ReserveForm() {
           <span className="text-[32px] sm:text-[40px] font-bold italic leading-[1.1] text-[#050505]">
             $299
           </span>
-          <span className="text-[20px] sm:text-[24px] font-medium italic leading-[1.1] text-[#4d4d4d] line-through">
+          <span className="text-[20px] sm:text-[24px] font-medium italic leading-[1.1] text-[#707070] line-through">
             $499
           </span>
           <span className="bg-gradient-to-b from-[#1d6100] to-[#05ce78] border border-[#05ce78] text-white text-[12px] font-bold italic leading-[1.1] px-[8px] py-[4px] rounded-[94px]">

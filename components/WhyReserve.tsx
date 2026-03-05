@@ -42,10 +42,10 @@ export default function WhyReserve() {
           <div className="relative bg-[#ebebeb] border border-xforge-border rounded-[16px] sm:rounded-[24px] lg:rounded-[32px] px-7 sm:px-8 lg:px-[37px] py-3.5 sm:py-4 lg:py-[19px] flex items-center gap-4 sm:gap-5 lg:gap-5">
             {/* MSRP */}
             <div className="flex flex-col items-center gap-2 sm:gap-3">
-              <span className="text-[#4b4b4b] text-[14px] sm:text-base lg:text-[18px] font-medium leading-[1.1] tracking-[0.28px] sm:tracking-[0.36px]">
+              <span className="text-[#707070] text-[14px] sm:text-base lg:text-[18px] font-medium leading-[1.1] tracking-[0.28px] sm:tracking-[0.36px]">
                 MSRP
               </span>
-              <span className="text-[40px] sm:text-[44px] md:text-[52px] lg:text-[60px] font-bold leading-[1.1] text-[rgba(77,77,77,0.4)] lg:text-[#9e9c9c] line-through">
+              <span className="text-[40px] sm:text-[44px] md:text-[52px] lg:text-[60px] font-bold leading-[1.1] text-[#707070]/40 lg:text-[#707070] line-through">
                 $499
               </span>
             </div>
@@ -57,7 +57,7 @@ export default function WhyReserve() {
 
             {/* Your Price */}
             <div className="flex flex-col items-center gap-2 sm:gap-3">
-              <span className="text-[#4e4e4e] text-[14px] sm:text-base lg:text-[18px] font-medium leading-[1.1] tracking-[0.28px] sm:tracking-[0.36px]">
+              <span className="text-[#707070] text-[14px] sm:text-base lg:text-[18px] font-medium leading-[1.1] tracking-[0.28px] sm:tracking-[0.36px]">
                 YOUR PRICE
               </span>
               <span className="text-[40px] sm:text-[44px] md:text-[52px] lg:text-[60px] font-bold leading-[1.1] text-black">

@@ -91,7 +91,7 @@ export default function EmailSubscription() {
         </motion.button>
         <div className={S.insetShadow} />
       </div>
-      <p className="text-[14px] sm:text-sm font-normal leading-[1.1] text-[#4d4d4d] text-center mt-3 sm:mt-4">
+      <p className="text-[14px] sm:text-sm font-normal leading-[1.1] text-[#707070] text-center mt-3 sm:mt-4">
         Reserve now and save <span className="font-bold">$200</span>
       </p>
     </div>

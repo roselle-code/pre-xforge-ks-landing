@@ -244,7 +244,7 @@ function ChatbotWidget() {
               </span>
             </div>
           ) : (
-            <span className="text-[12px] text-[#6e6e6e]">What else can I help?</span>
+            <span className="text-[12px] text-[#999]">What else can I help?</span>
           )}
         </div>
         <div className="w-[36px] h-[36px] bg-[#e5a501] rounded-full flex items-center justify-center flex-shrink-0">

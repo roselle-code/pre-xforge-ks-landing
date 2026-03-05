@@ -42,7 +42,7 @@ const rewardElevate = {
 function StaticCard() {
   return (
     <div className="flex items-center justify-between mb-[7px] lg:mb-2">
-      <span className="text-[#686c81] text-[11px] lg:text-[12px]">Network Rewards</span>
+      <span className="text-[#999] text-[11px] lg:text-[12px]">Network Rewards</span>
       <div className="flex items-center gap-2">
         <span className="inline-flex rounded-full h-[6px] w-[6px] lg:h-[7px] lg:w-[7px] bg-xforge-green" />
         <span className="text-xforge-green text-[11px] lg:text-[12px]">Node is Running</span>
@@ -114,7 +114,7 @@ export function DesktopRewardCards({ rewardCount }: { rewardCount: number }) {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={rewardElevate}>
           <div className="bg-xforge-card-bg3 backdrop-blur-md border border-[#bdbdbd]/40 rounded-[12px] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[#aeb2c7] text-[12px]">Network Rewards</span>
+              <span className="text-[#999] text-[12px]">Network Rewards</span>
               <div className="flex items-center gap-2">
                 <span className="relative flex h-[7px] w-[7px]">
                   <span className="animate-ping absolute inset-0 rounded-full bg-xforge-green opacity-75" />
@@ -190,7 +190,7 @@ export function MobileRewardCards({ rewardCount }: { rewardCount: number }) {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={rewardElevate}>
           <div className="bg-xforge-card-bg3 backdrop-blur-md border border-[#bdbdbd]/40 rounded-[9px] p-[11px] shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
             <div className="flex items-center justify-between mb-[7px]">
-              <span className="text-[#aeb2c7] text-[11px]">Network Rewards</span>
+              <span className="text-[#999] text-[11px]">Network Rewards</span>
               <div className="flex items-center gap-2">
                 <span className="relative flex h-[6px] w-[6px]">
                   <span className="animate-ping absolute inset-0 rounded-full bg-xforge-green opacity-75" />

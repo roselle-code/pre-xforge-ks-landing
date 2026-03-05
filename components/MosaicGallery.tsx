@@ -207,7 +207,7 @@ export default function MosaicGallery() {
           <span className="font-bold italic text-black">
             Beautifully crafted and incredibly smart,
           </span>{" "}
-          <span className="text-[#707070]">
+          <span className="text-[#999]">
             it is designed to help power a better internet and quietly reward
             you along the way.
           </span>
