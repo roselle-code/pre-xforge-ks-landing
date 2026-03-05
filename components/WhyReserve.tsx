@@ -20,8 +20,7 @@ export default function WhyReserve() {
           transition={{ duration: 1.2, ease: [0.12, 1, 0.2, 1] }}
           className="text-[20px] sm:text-[28px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.1] text-black text-center"
         >
-          <span>Why reserve with </span>
-          <span className="font-bold">$3</span>
+          <span>Why reserve with $3</span>
         </motion.h2>
 
         {/* Content Container */}
