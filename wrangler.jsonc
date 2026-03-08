@@ -1,0 +1,44 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "main": ".open-next/worker.js",
+    "name": "xforge-landing",
+    "compatibility_date": "2024-12-30",
+    "compatibility_flags": [
+        // Enable Node.js API compatibility
+        // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag
+        "nodejs_compat",
+        // Allow outbound fetch (Mailchimp, Stripe, etc.)
+        // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
+        "global_fetch_strictly_public"
+    ],
+    "assets": {
+        "directory": ".open-next/assets",
+        "binding": "ASSETS"
+    },
+    "services": [
+        {
+            "binding": "WORKER_SELF_REFERENCE",
+            // Must match the "name" above
+            "service": "xforge-landing"
+        }
+    ],
+    "kv_namespaces": [
+        {
+            // KV namespace for subscriber email backup (replaces local JSON file)
+            "binding": "SUBSCRIBERS_KV",
+            "id": "<KV_NAMESPACE_ID>"
+        }
+    ],
+    // Uncomment to enable R2-based ISR caching
+    // "r2_buckets": [
+    //   {
+    //     "binding": "NEXT_INC_CACHE_R2_BUCKET",
+    //     "bucket_name": "xforge-landing-cache"
+    //   }
+    // ],
+    "images": {
+        // Enable Cloudflare image optimization (replaces next/image optimizer)
+        // https://opennext.js.org/cloudflare/howtos/image
+        "binding": "IMAGES"
+    }
+}

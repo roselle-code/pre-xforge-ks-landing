@@ -1,6 +1,9 @@
 // Security headers applied to ALL routes. Changing these can break embeds,
 // iframes, or third-party integrations. Test thoroughly after modifications.
 import type { NextConfig } from "next";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+
+initOpenNextCloudflareForDev();
 
 const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "on" },
